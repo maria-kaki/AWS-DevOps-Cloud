@@ -1,0 +1,3 @@
+Thank you for enrolling in the course! We would like to get your input to make this and other courses on Coursera even better. Below you will start seeing survey questions during the course, that should not take more than a minute to complete each time. Please provide us your feedback - it is very valuable!
+
+_This survey is hosted by an external company (Qualtrics), so the link above does not lead to our website. Please note that AWS will own the data gathered via this survey, and will not share the information/results collected with survey respondents. AWS handles your information as described in the_ [_AWS Privacy Notice_](https://aws.amazon.com/privacy/)_._
