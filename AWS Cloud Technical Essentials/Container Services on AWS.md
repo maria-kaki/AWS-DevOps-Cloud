@@ -1,0 +1,18 @@
+EC2 is great for all sorts of different use cases, from running basic web servers, to running high-performance computing clusters. That being said, though EC2 is incredibly flexible, reliable and scalable, depending on your use case, you might be looking at alternatives for your compute capacity. For example, let's say you are looking for a way to run containers at scale on AWS. Containers can provide you with efficiency and portability. In this context, I am specifically referring to containers like docker containers or containers that use the containered runtime. If you aren't sure what containers are, please review the readings on containers. Containers are portable because everything an application needs to run, including the application code, dependencies, and configuration are all packaged up together as one executable, which is the container itself. Since everything is self-contained, it means that you can expect your containers to behave the same way across different environments, like development, QA and production.
+# __
+![[Pasted image 20230702233830.png]]
+AWS offers container services like Amazon Elastic Container Service, otherwise known as ECS, or Amazon Elastic Kubernetes Service, otherwise known as EKS. Both of these services are container orchestration tools.
+# __
+![[Pasted image 20230702233932.png]]
+When you use containers on AWS, you need processes to start, stop, restart, and monitor containers running across, not just one EC2 instance, but a number of them together, called a cluster. The process of doing these tasks is called container orchestration. And turns out, it's really hard to do on your own. If you have a few containers, it's not so bad. But once you get to hundreds or thousands of containers you are managing, it can be quite complex. Orchestration tools were created to help you run and manage containers.
+# __
+![[Pasted image 20230703105307.png]]
+ECS is designed to help you run your containerized applications at scale without the hassle of managing your own container orchestration software.
+# __
+![[Pasted image 20230703105358.png]]
+EKS does essentially the same thing, but uses different tooling with different features. We aren't going to go too much into this now. However, I did include a link to more learning resources around containerized applications on AWS in the readings following this video. The way you can interact with these container services is you manage the containers running on a cluster through the orchestration tool's API. And then the orchestration tool carries out the management tasks.
+# __
+You can automate scaling of your cluster hosting your containers, as well as automate scaling of the containers themselves. Containers have a shorter boot-up time when compared to virtual machines. So if you need super fast response to increasing demand, then containers might be the service for you. Personally, I think the portability aspect that containers give are my favorite benefit of containerized applications. So you can choose to host containers on top of a cluster of EC2 instances as your hosting options either for ECS or EKS. However, what if you were looking for an alternative to hosting your containers, because you either don't need access to the underlying OS, or you don't want to manage those EC2 instances? Well, you can use a compute platform called AWS Fargate, which handles most of the underlying details for you. 
+![[Pasted image 20230703105625.png]]
+Fargate is a serverless compute platform for ECS and EKS. And we'll talk more about what serverless is coming up next.
+# __

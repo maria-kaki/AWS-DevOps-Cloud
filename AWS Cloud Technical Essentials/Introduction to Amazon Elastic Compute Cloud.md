@@ -15,3 +15,21 @@ For example, the G instance family are optimized for graphics intensive applica
 # __
 ![[Pasted image 20230701015647.png]]
 When you are launching an EC2 instance, you will see something like this when selecting an instance type and size. The T3 or A1 is the instance type that determines the blend of hardware capabilities, then the dot, then the size like small, medium, large. It goes down to nano and up to many, many extra large sizes.
+# __
+![[Pasted image 20230701104127.png]]
+The great thing about this type of selection existing right at your fingertips is that you are no longer locked into hardware decisions upfront. You can choose an initial EC2 instance type, evaluate its performance for your specific use case, and then later change it to a different type that is better suited for the application.
+# __
+![[Pasted image 20230701104231.png]]
+EC2 is also re-sizable with a few clicks in the console or can be done programmatically through an API call.
+# __
+![[Pasted image 20230701110259.png]]
+![[Pasted image 20230701110316.png]]
+All of these configurations being available to you via API enables you to embrace change over time easily as your workloads mature and change.
+# __
+So okay, virtual machines are cool and totally not new, so how exactly does this impact your business? Well, the important thing is this. The flexible and low-cost nature of EC2 instances as well as the ease of provisioning servers allows for programmers and businesses to innovate more quickly by spinning up servers for a short amount of time to run experiments and find optimal configurations for your applications.
+# __
+![[Pasted image 20230701112352.png]]
+EC2 offers a wide variety of hardware options to choose from so you can optimize your solutions by selecting the right EC2 instance type for your application, and then you can optimize even further by right-sizing the resource or selecting an instance size that is appropriate for your application and not over provisioning like is often done on premises.
+# __
+This type of optimization is hard to achieve on your own because with traditional on-premises deployments, you are working with hardware constraints that simply don't exist in the same way with the cloud. The ability to adapt to changes and choose really specific configurations for your virtual machines all through a couple of API calls is very powerful and EC2 is really just the beginning of the story.
+# __

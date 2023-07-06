@@ -32,8 +32,26 @@
 - ###### [[Test ]]
 - ###### [[Mid-Course Survey]]
 # Second Week
+### AWS Compute
 - ###### [[Introduction to Week 2 - Course 1]]
 - ###### [[Compute as a Service on AWS]]
 - ###### [[Compute as a Service on AWS - 2.1]]
 - ###### [[Introduction to Amazon Elastic Compute Cloud]]
+- ###### [[Introduction to Amazon Elastic Compute Cloud - 2.2]]
+- ###### [[Amazon EC2 Instance Lifecycle]]
+- ###### [[Amazon EC2 Instance Lifecycle - 2.25]]
+- ###### [[Introduction to Exercise 3]]
+- ###### [[Exercise 3 - Launch and Corporate Directory Application on Amazon EC2]]
+- ###### [[Demonstration - Launching the Employee Directory Application]]
+- ###### [[Container Services on AWS]]
+- ###### [[Container Services on AWS - 2.3]]
+- ###### [[Introduction to Serverless]]
+- ###### [[Serverless with AWS Fargate]]
+- ###### [[Introduction to AWS Lambda]]
+- ###### [[Choose the Right Compute Service]]
+- ###### [[Serverless and AWS Lambda - 2.4]]
+### AWS Networking
+- ###### [[Networking on AWS]]
+- ###### [[Networking on AWS -2.5]]
+- ###### [[Introduction to Amazon VPC]]
 - 
