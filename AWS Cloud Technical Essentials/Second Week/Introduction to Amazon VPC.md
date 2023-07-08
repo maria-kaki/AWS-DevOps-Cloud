@@ -1,7 +1,7 @@
 In this video, you'll be learning how to create a VPC with Morgan's help. We'll both be conceptualizing and building a VPC throughout the next few videos. The idea of a VPC is similar to how you think of walls around a data center. In a data center, walls act as a boundary between the outside world and all of your infrastructure. A VPC in AWS acts the same way. It creates a boundary where your applications and resources are isolated from any outside movement, so nothing comes into the VPC and nothing comes out of the VPC without your explicit permission. 
 # __
 ![[Pasted image 20230705154746.png]]
-When you create a VPC, you have to declare two specific settings; the region you're selecting, and the IP range for the VPC in the form of CIDR notation. (notification dings) For our VPC, we'll be locating it in the region where the rest of our infrastructure will be, the Oregon region. and our IP range will say is 10.1.0.0/16.
+When you create a VPC, you have to declare two specific settings; the region you're selecting, and the IP range for the VPC in the form of CIDR notation. For our VPC, we'll be locating it in the region where the rest of our infrastructure will be, the Oregon region. and our IP range will say is 10.1.0.0/16.
 # __
 Alright, so currently our VPC looks just like a box. Time to build the VPC. (swoosh effect) Okay, Morgan, let's build out a VPC for the Employee Directory app. I was hoping you could build us a VPC that matches this diagram. 
 # __
@@ -53,5 +53,29 @@ To enable internet connectivity, we need a component called an internet gateway
 # __
 If you create an internet gateway and don't attach it, it won't do anything except sit there. Okay, Morgan, show us how it's done. Create an internet gateway and attach it to our VPC.
 # __
-
-Back in the VPC dashboard, you'll click on Internet gateways on the side panel, then Create internet gateway. You'll give the internet gateway a name, and then click Create. On the details page, you'll then select the Actions dropdown box and select Attach to VPC. Choose the app-vpc we've been working with, and then click Attach. Okay, Seph, what's next? - Oh, sorry, I thought I'd have more time to drink my tea. So we have an internet gateway that we can use to allow access from the internet, but what if we had a VPC with all internal private resources that we want to reach only from our on-premises data center? If we only want traffic to flow between AWS and our data center, and we don't want to allow direct access from the internet, what do we do? Luckily, there's another gateway designed for this very purpose called a virtual private gateway or VGW. It allows you to create a VPN connection between a private network, like an on-premises data center or internal corporate network, to your VPC. With the help of a VGW, you can establish an encrypted VPN connection to your private internal AWS resources. We won't be using a VGW for our application but it's good to know. We'll talk more about that in an upcoming lesson. Alright, so we have one VPC, two subnets, and an internet gateway. Now, every time you look at an architecture, you should begin to think, how do I make this better? You're not going to have all of the answers right away, but I do want you to take 10 seconds and think about some solutions. (light jazz music) Okay, well, one option to make this better is the idea of having high availability. What that means is if this AZ goes down for whatever reason, what happens to our resources in that AZ? They go down too. So ideally we would have resources in another AZ to take on the traffic coming to our application. To do this, we'd need to duplicate the resources in the first AZ to the second AZ, so that means we'd need to create two additional subnets, each within another AZ, say AZ B. As a best practice, you should always be using at least two AZs, and hosting your resources redundantly. Morgan is going to build out some subnets in another AZ in the background for the rest of our demos. She's also going to launch an EC2 instance hosting our application in one of the public subnets. Sound good, Morgan? - Sounds good. Okay, we'll see you in an upcoming video. This time with one VPC, four subnets across two AZs, and one running EC2 instance.
+![[Pasted image 20230705214044.png]]
+![[Pasted image 20230705214105.png]]
+Back in the VPC dashboard, you'll click on Internet gateways on the side panel, then Create internet gateway. 
+# __
+![[Pasted image 20230705215459.png]]
+You'll give the internet gateway a name, and then click Create. 
+# __
+![[Pasted image 20230705215524.png]]
+![[Pasted image 20230705215537.png]]
+![[Pasted image 20230705215642.png]]
+On the details page, you'll then select the Actions dropdown box and select Attach to VPC. Choose the app-vpc we've been working with, and then click Attach. 
+# __
+![[Pasted image 20230705220833.png]]
+So we have an internet gateway that we can use to allow access from the internet, but what if we had a VPC with all internal private resources that we want to reach only from our on-premises data center? If we only want traffic to flow between AWS and our data center, and we don't want to allow direct access from the internet, what do we do? Luckily, there's another gateway designed for this very purpose called a virtual private gateway or VGW. It allows you to create a VPN connection between a private network, like an on-premises data center or internal corporate network, to your VPC. With the help of a VGW, you can establish an encrypted VPN connection to your private internal AWS resources. We won't be using a VGW for our application but it's good to know. We'll talk more about that in an upcoming lesson. 
+# __
+![[Pasted image 20230705224256.png]]
+Alright, so we have one VPC, two subnets, and an internet gateway. Now, every time you look at an architecture, you should begin to think, how do I make this better? You're not going to have all of the answers right away, but I do want you to take 10 seconds and think about some solutions. 
+# __
+![[Pasted image 20230705224503.png]]
+One option to make this better is the idea of having high availability. What that means is if this AZ goes down for whatever reason, what happens to our resources in that AZ? They go down too. So ideally we would have resources in another AZ to take on the traffic coming to our application. 
+# __
+![[Pasted image 20230705224552.png]]
+To do this, we'd need to duplicate the resources in the first AZ to the second AZ, so that means we'd need to create two additional subnets, each within another AZ, say AZ B. As a best practice, you should always be using at least two AZs, and hosting your resources redundantly. 
+# __
+Morgan is going to build out some subnets in another AZ in the background for the rest of our demos. She's also going to launch an EC2 instance hosting our application in one of the public subnets. Sound good, Morgan? - Sounds good. Okay, we'll see you in an upcoming video. This time with one VPC, four subnets across two AZs, and one running EC2 instance.
+# __

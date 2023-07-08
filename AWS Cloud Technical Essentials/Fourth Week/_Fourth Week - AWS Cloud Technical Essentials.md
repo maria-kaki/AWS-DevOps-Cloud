@@ -1,0 +1,12 @@
+### Monitoring on AWS
+- ###### [[Introduction to Week 4 - Course 1]]
+- ###### [[Monitoring on AWS]]
+- ###### [[Monitoring on AWS - 4.1]]
+- ###### [[Introduction to Amazon CloudWatch]]
+- ###### [[Introduction to Amazon CloudWatch - 4.2]]
+- ###### [[Optimizing Solutions on AWS]]
+- ###### [[Optimizing Solutions on AWS - 4.3]]
+- ###### [[Route Traffic with Amazon Elastic Load Balancing]]
+- ###### [[Route Traffic with Amazon Elastic Load Balancing - 4.4]]
+- ###### [[Amazon EC2 Auto Scaling]]
+- 
