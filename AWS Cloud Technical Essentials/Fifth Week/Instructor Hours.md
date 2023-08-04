@@ -1,0 +1,1 @@
+The first **AWS Instructor Hours for Cloud Technical Essentials** were held in September 2021. Morgan Willis and Raf Lopes answered most-asked questions about the course and what can come next in your AWS journey! See the video on the next screen.

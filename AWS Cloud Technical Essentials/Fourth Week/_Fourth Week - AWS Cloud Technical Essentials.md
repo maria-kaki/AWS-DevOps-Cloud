@@ -9,4 +9,14 @@
 - ###### [[Route Traffic with Amazon Elastic Load Balancing]]
 - ###### [[Route Traffic with Amazon Elastic Load Balancing - 4.4]]
 - ###### [[Amazon EC2 Auto Scaling]]
-- 
+- ###### [[Amazon EC2 Auto Scaling - 4.5]]
+- ###### [[Introduction to Exercise 7]]
+- ###### [[_Exercise 7 - Configure High Availability for your Application]]
+- ###### [[Demo Making Employee Directory Application]]
+- ###### [[Test - 4]]
+### Going Serverless
+- ###### [[Redesigning the Employee Directory]]
+- ###### [[Self-Graded Activity - Capstone Project]]
+### End of Course Assessment
+- ###### [[End of Course Assessment]]
+- ###### [[Pre-Course Survey 5]]

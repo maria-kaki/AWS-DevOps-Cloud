@@ -1,0 +1,6 @@
+Welcome to the final exercise of this course. In this exercise we'll be optimizing our employee directory application by using Amazon CloudWatch, ELB, and EC2 Auto Scaling. The first thing you'll do is create an application load balancer. You'll use this load balancer to distribute requests to your EC2 instances that host your application. Next, you'll use Auto Scaling to launch the instances. To do this, you'll first create a launch template to specify your instance configuration. You'll then use this launch template to create an Auto Scaling group. You'll specify a minimum of two, maximum of four, and desired capacity of two instances. You'll also configure your Auto Scaling group to use the application load balancer you created. You'll configure your Auto Scaling group to scale based off of CloudWatch alarms and trigger Auto Scaling to add a new instance when CPU utilization reaches 60%. 
+# __
+![[Pasted image 20230708183724.png]]
+Finally, you'll be able to go into your application and test this by going to the info page of the employee directory app. You can trigger an increase in CPU load and see your application horizontally scale in real time. 
+# __
+Enjoy, and since this is your final exercise, remember to tear down all the infrastructure you created for this course if you have been following along. That way you can minimize future costs.

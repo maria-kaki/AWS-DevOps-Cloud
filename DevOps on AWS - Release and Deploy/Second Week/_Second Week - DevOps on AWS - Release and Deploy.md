@@ -1,0 +1,12 @@
+###
+- ###### [[Week 2 Introduction]]
+- ###### [[Infrastructure as Code]]
+- ###### [[Abstracting IaC on AWS]]
+- ###### [[Automating the Creation of the Pipeline]] A
+- ###### [[Troubleshooting AWS CloudFormation]] A
+- ###### [[Introduction to Exercise 3 - 3 course]] A
+- ###### [[Optional Exercise 3 - Building a Pipeline with CloudFormation]]
+- ###### [[Course Wrap-up-3]]
+- ###### [[Test - 2 - 3 course]]
+- ###### [[Post-Course Survey - 2]]
+- 

@@ -1,0 +1,5 @@
+It's time to get hands-on with our sample application. You will start the exercise by creating an AWS Cloud9 environment for your dev environment. In the AWS Cloud9 environment, you will download and unzip the source code you will be using in this course. The backend infrastructure will be deployed with the AWS SAM CLI, 
+ ![[Pasted image 20230708222101.png]]
+or AWS Serverless Application Model Command Line Interface. 
+# __ 
+This creates all the resources for the application backend, which are an API Gateway endpoint, the necessary Lambda functions, a DynamoDB table, and a Step Functions state machine. You will also deploy the frontend, which is a React web application to an S3 bucket. So, S3 will act as the web server. Once everything is all up and running, it is time to start using AWS CodeCommit for adding source control capabilities to the application. It is your turn. Let us know if you experience any problems when doing this exercise. Please use the forums or discussion groups to get back to us.
